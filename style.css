@@ -4,7 +4,7 @@ body {
   padding: 0;
 }
 header {
-  background-color: #2089ba;
+  
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -19,11 +19,12 @@ nav a {
   color: #2089ba;
   font-weight: bold;
   
-
 }
 nav a:hover {
   text-decoration: underline;
 }
+
+
 .content {
     padding: 48px;
     margin: 24px auto; 
@@ -66,3 +67,24 @@ footer .authors {
   margin-top: 5px;
 
 }
+
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .content {
+    padding: 20px;
+    margin: 10px;
+    max-width: 90%;
+    flex-direction: column;
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
