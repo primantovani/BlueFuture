@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de Software</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2089ba;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2089ba;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+
+        footer {
+            background-color: #2089ba;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer .authors {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Blue Future</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showPage('apresentacao')">Apresentação</a>
+        <a href="#" onclick="showPage('modulos')">Arquitetura da solução</a>
+        <a href="#" onclick="showPage('diagrama')">Diagrama</a>
+        <a href="#" onclick="showPage('wireframe')">Wireframe</a>
+    </nav>
+
+    <div class="content">
+        <div id="apresentacao">
+            <h2>Contextualização</h2>
+            <p>O projeto proposto tem como objetivo abordar uma questão crucial enfrentada pela sociedade contemporânea: a necessidade urgente de promover hábitos sustentáveis e proteger os oceanos. Vivemos em um mundo onde o consumo excessivo e a exploração irresponsável dos recursos naturais têm causado danos irreparáveis ao meio ambiente, impactando diretamente a saúde dos oceanos e ameaçando a vida marinha. Diante desse cenário, é fundamental encontrar maneiras eficazes de sensibilizar as pessoas e incentivá-las a adotarem práticas mais sustentáveis em seu dia a dia.
+            <p>
+            O aumento do consumo insustentável e a degradação dos oceanos representam desafios enormes para a sustentabilidade ambiental. A sociedade contemporânea está enfrentando uma crise ambiental sem precedentes, com a perda acelerada de biodiversidade, o aumento da poluição e as mudanças climáticas causando impactos devastadores em todo o mundo. No cerne dessa crise está o comportamento humano, impulsionado por padrões de consumo excessivos e uma mentalidade de curto prazo que prioriza o lucro imediato sobre a preservação do meio ambiente para as gerações futuras.
+            </p>
+            Além disso, a falta de conscientização e educação ambiental tem contribuído para a perpetuação desses padrões insustentáveis, com muitas pessoas desconhecendo o verdadeiro impacto de suas ações no meio ambiente. A ausência de incentivos tangíveis e recompensas para práticas sustentáveis também tem sido um obstáculo significativo, com muitas pessoas sentindo que suas pequenas ações individuais não fazem diferença em face dos enormes desafios globais.
+            </p>
+            <p>
+            Diante desse contexto, há uma necessidade premente de uma abordagem inovadora que engaje e motive as pessoas a adotarem hábitos mais sustentáveis e promova a proteção dos oceanos. É essencial criar ferramentas e plataformas que não apenas eduquem e conscientizem, mas também ofereçam incentivos tangíveis para as ações sustentáveis, capacitando os indivíduos a fazerem escolhas positivas para o planeta.
+            </p>
+
+            <h2>Descrição do projeto</h2>
+
+            <p>A Blue Future será uma aplicação web gamificada projetada para incentivar hábitos de consumo sustentável e proteger os oceanos. Através de desafios diários, semanais e mensais, os usuários poderão acumular pontos, ganhar recompensas ecológicas e ver seu impacto positivo crescer. O site também oferecerá uma comunidade engajada, dicas, artigos e notícias sobre sustentabilidade, criando uma plataforma educacional e interativa para promover a conscientização ambiental.</p>
+
+            <h2>Estrutura e funcionalidades:</h2>
+            
+            <p>Apresentação: É composta por três partes que apresentam as principais funcionalidades e a proposta do Blue Future.</p>
+            <p>Tela de login e cadastro: Interface onde os usuários podem se cadastrar e fazer login na aplicação.</p>
+            <p>Desafios: Seção onde os usuários podem acessar e participar de desafios ambientais.</p>
+            <p>Comunidade: Espaço onde os usuários podem interagir, compartilhar conquistas e aprender mais sobresustentabilidade.</p>
+            <p>Dicas, notícias e artigos: Seção dedicada a fornecer informações e educar os usuários sobre práticas sustentáveis e questões ambientais.</p>
+        </div>
+
+
+
+        <div id="modulos" class="hidden">
+            <h2>Principais Módulos de Software</h2>
+            <p>Descrição dos principais módulos de software que serão utilizados no desenvolvimento do projeto</p>
+            <p><strong>Front End da Aplicação Web</strong></p>
+                <p><strong>Linguagens de Programação:</strong> HTML, CSS, JavaScript.</p>
+                <p><strong>Justificativa:</strong> HTML, CSS e JavaScript são as linguagens fundamentais para o desenvolvimento web. HTML fornece a estrutura da página, CSS estiliza essa estrutura, e JavaScript adiciona interatividade e dinâmica, permitindo uma experiência de usuário rica e envolvente.</p>
+                <p><strong>Framework Frontend:</strong> React.js - é um framework eficiente e flexível para a construção de interfaces de usuário. Ele permite a criação de componentes reutilizáveis, melhorando a produtividade e a consistência do código. Além disso, a biblioteca virtual DOM do React.js otimiza as atualizações da interface, proporcionando um desempenho superior.</p>
+                <p><strong>IDE (Ambiente de Desenvolvimento Integrado):</strong> Visual Studio Code - é uma IDE poderosa e extensível, popular entre desenvolvedores web. Suporta uma ampla gama de extensões que aumentam a produtividade, incluindo depuradores, suporte a linting, e integração com sistemas de controle de versão.</p>
+                <p><strong>Backend da Aplicação Web</strong></p>
+                <p><strong>Linguagem de Programação:</strong> Node.js - permite a construção de servidores escaláveis e de alto desempenho utilizando JavaScript. É especialmente eficiente para aplicações que exigem muitas operações de I/O, como manipulação de arquivos e comunicação em rede.</p>
+                <p><strong>Framework Backend:</strong> Express.js - é um framework minimalista e flexível para Node.js. Ele facilita a criação de APIs e manuseio de requisições HTTP, permitindo um desenvolvimento rápido e eficiente do backend.</p>
+                <p><strong>SGBD (Sistema de Gerenciamento de Banco de Dados):</strong> MongoDB - é um banco de dados NoSQL que oferece alta flexibilidade e escalabilidade. Ele é ideal para aplicações que requerem armazenamento de grandes volumes de dados não estruturados e mudanças frequentes no esquema de dados.</p>
+                <p><strong>Autenticação e Segurança</strong></p>
+                <p><strong>Método de Autenticação:</strong> Login e cadastro de usuários, com criptografia de senha e verificação por e-mail - garante que os dados dos usuários estejam protegidos contra acesso não autorizado. A verificação por e-mail adiciona uma camada extra de segurança, confirmando a identidade dos usuários.</p>
+                <p><strong>Integração com Serviços de Terceiros</strong></p>
+                <p><strong>APIs Externas:</strong> Integração com APIs de notícias ambientais - a integração com APIs externas permite que o aplicativo ofereça conteúdo atualizado e relevante, como notícias ambientais. Isso mantém os usuários informados e engajados com tópicos relacionados à sustentabilidade.</p>
+                <p><strong>Armazenamento em Nuvem</strong></p>
+                <p><strong>Serviço de Armazenamento:</strong> AWS S3 (Amazon Simple Storage Service) - é um serviço de armazenamento de objetos em nuvem altamente escalável, seguro e durável. Ele é ideal para armazenar mídia, como imagens e vídeos, garantindo alta disponibilidade e proteção dos dados. O uso de AWS S3 permite fácil integração com outros serviços da AWS, como CloudFront para distribuição de conteúdo e Lambda para processamento de dados.</p>
+                <p><strong>Comunicação em Tempo Real</strong></p>
+                <p><strong>Websockets:</strong> Utilização de Websockets para comunicação em tempo real entre usuários na comunidade - Websockets permitem comunicação bidirecional e em tempo real entre o servidor e o cliente. Isso é essencial para funcionalidades de chat e interações dinâmicas na comunidade do aplicativo, proporcionando uma experiência de usuário interativa e responsiva.</p>
+                <p><strong>Acessibilidade</strong></p>
+                <p><strong>Semântica HTML adequada:</strong> Usar tags HTML semânticas ajuda na navegação por leitores de tela, melhorando a acessibilidade para usuários com deficiência visual.</p>
+                <p><strong>Contraste de cores:</strong> Garantir bom contraste entre texto e fundo facilita a leitura para usuários com deficiência visual.</p>
+                <p><strong>Tamanho do texto ajustável:</strong> Usar unidades de medida relativas permite que os usuários ajustem o tamanho do texto conforme necessário.</p>
+                <p><strong>Legendas e alternativas de texto:</strong> Fornecer legendas para conteúdos multimídia e textos alternativos para imagens é vital para a acessibilidade de usuários com deficiência auditiva e visual.</p>
+                <p><strong>Compatibilidade com leitores de tela:</strong> Testar com leitores de tela populares garante que o aplicativo seja acessível a usuários cegos ou com baixa visão.</p>
+                <p>Esses módulos de software compõem a arquitetura da solução para o desenvolvimento do projeto, fornecendo as bases necessárias para a construção de uma aplicação web robusta, segura e escalável. Cada componente foi escolhido com base na sua adequação às necessidades do projeto e na sua capacidade de fornecer uma experiência de usuário envolvente e interativa.</p>
+        </div>
+        <div id="diagrama" class="hidden">
+            <h2>Diagrama</h2>
+            <p>Abaixo está o diagrama do sistema:</p>
+            <img src="./Assets/diagrama.png" alt="Diagrama do Sistema" style="width:100%; max-width:600px;">
+        </div>
+        <div id="wireframe" class="hidden">
+            <h2>Wireframe</h2>
+            <p><a href="https://www.figma.com/proto/aRDmCYxDNnW4R8NkMyBhJO/App-Global-Solutions?node-id=193-2027&t=DlYxN5ZTsmqTsKIo-1&scaling=scale-down&page-id=106%3A1268&starting-point-node-id=204%3A2167&show-proto-sidebar=1" target="_blank">Acesse aqui o wireframe</a></p>
+            <p>Abaixo está o wireframe do sistema:</p>
+            <img src="./Assets/web.png" alt="Wireframe do Sistema" style="width:100%; max-width:600px;">
+        </div>
+
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Todos os direitos reservados.</p>
+        <p class="authors">Gabriel Notari, Igor Vieira, João Vitor Pontes, Sophie Moreau e Priscila Mantovani</p>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.content > div');
+            pages.forEach(page => {
+                if (page.id === pageId) {
+                    page.classList.remove('hidden');
+                } else {
+                    page.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
